@@ -1,0 +1,226 @@
+body{
+  font-size: 20pt;
+  text-align: center;
+  background-color: rgba(220,214,211,1);
+
+}
+
+#inside{
+  width: 480px;
+  height: 646px;
+  margin: auto;
+}
+
+#back{
+  width: 1000px;
+  height: 765px;
+  border: 1px solid rgba(220,214,211,1);
+  margin: auto;
+  background: url("game.png");
+  background-color: white;
+}
+
+#game{
+  margin: auto;
+  margin-top: 80px;
+  width: 400px;
+  height: 400px;
+  font-size: 50pt;
+}
+
+#moves{
+  float: left;
+  font-size: 20pt;
+  width: 200px;
+  text-align: left;
+}
+
+#timer{
+  float: left;
+  width: 200px;
+  font-size: 20pt;
+  text-align: right;
+}
+
+.moveable:hover{
+  float: left;
+  color: green;
+  border: 2px solid red;
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+
+button{
+  width: 85px;
+  height: 50px;
+  background-color: lightblue;
+  font-weight: bold;
+  font-size: 12pt;
+}
+
+button#large{
+  width: 150px;
+  height: 60px;
+  background-color: lightblue;
+  font-weight: bold;
+  font-size: 25pt;
+}
+
+input[type=radio] {
+  width: 2em;
+  height: 2em;
+}
+
+.validate{
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+}
+span#win, span#you {
+  font-size: 40pt;
+  color: darkgreen;
+}
+
+.tile1{
+  float: left;
+  width: 96px;
+  height: 96px;
+  background: url("flower.jpg");
+  background-position: 0 0;
+  border: 2px solid;
+}
+.tile2{
+  float: left;
+  width: 96px;
+  height: 96px;
+  background: url("flower.jpg");
+  background-position: -100px 0px;
+  border: 2px solid;
+}
+.tile3{
+  float: left;
+  width: 96px;
+  height: 96px;
+  background: url("flower.jpg");
+  background-position: -200px 0;
+  border: 2px solid;
+}
+.tile4{
+  float: left;
+  width: 96px;
+  height: 96px;
+  background: url("flower.jpg");
+  background-position: -300px 0px;
+  border: 2px solid;
+}
+.tile5{
+  float: left;
+  width: 96px;
+  height: 96px;
+  background: url("flower.jpg");
+  background-position: 0 -100px;
+  border: 2px solid;
+}
+.tile6{
+  float: left;
+  width: 96px;
+  height: 96px;
+  background: url("flower.jpg");
+  background-position: -100px -100px;
+  border: 2px solid;
+}
+.tile7{
+  float: left;
+  width: 96px;
+  height: 96px;
+  background: url("flower.jpg");
+  background-position:-200px -100px;
+  border: 2px solid;
+}
+.tile8{
+  float: left;
+  width: 96px;
+  height: 96px;
+  background: url("flower.jpg");
+  background-position: -300px -100px;
+  border: 2px solid;
+}
+.tile9{
+  float: left;
+  width: 96px;
+  height: 96px;
+  background: url("flower.jpg");
+  background-position: 0 -200px;
+  border: 2px solid;
+}
+.tile10{
+  float: left;
+  width: 96px;
+  height: 96px;
+  background: url("flower.jpg");
+  background-position: -100px -200px;
+  border: 2px solid;
+}
+.tile11{
+  float: left;
+  width: 96px;
+  height: 96px;
+  background: url("flower.jpg");
+  background-position: -200px -200px;
+  border: 2px solid;
+}
+.tile12{
+  float: left;
+  width: 96px;
+  height: 96px;
+  background: url("flower.jpg");
+  background-position: -300px -200px;
+  border: 2px solid;
+}
+.tile13{
+  float: left;
+  width: 96px;
+  height: 96px;
+  background: url("flower.jpg");
+  background-position:0 -300px;
+  border: 2px solid;
+}
+.tile14{
+  float: left;
+  width: 96px;
+  height: 96px;
+  background: url("flower.jpg");
+  background-position: -100px -300px;
+  border: 2px solid;
+}
+.tile15{
+  float: left;
+  width: 96px;
+  height: 96px;
+  background: url("flower.jpg");
+  background-position: -200px -300px;
+  border: 2px solid;
+}
+.tile16{
+  float: left;
+  width: 96px;
+  height: 96px;
+  background: url("flower.jpg");
+  background-position: -300px -300px;
+  border: 2px solid;
+}
+
+@keyframes pop {
+  0% {transform: scale(0);}
+  60% {transform: scale(1.1);}
+  80% {transform: scale(.9);}
+  100% {transform: scale(1);}
+}
+
+@keyframes rubber {
+  0% {transform: scale3d(1.2, 0.8, 1);}
+  25% {transform: scale3d(0.8, 1.2, 1);}
+  50% {transform: scale3d(1.1, 0.9, 1);}
+  75% {transform: scale3d(0.95, 1.05, 1);}
+  100% {transform: scale3d(1.05, 0.95, 1);}
+}

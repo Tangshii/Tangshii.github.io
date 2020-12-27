@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>15 Puzzle</title>
+  <link rel="stylesheet" type="text/css" href="puzzleStyle.css" />
+  <script src="puzzleLogic.js"></script>
+</head>
+<body onload="setBack()">
+
+  <div id="back">
+    <div id="inside">
+
+      <div id="game">
+        <div id = "moves">moves:</div>
+        <div id = "timer">time:</div>
+
+        <div id="1-1" class="tile1" onclick="slide(1,1)">1</div>
+        <div id="1-2" class="tile2" onclick="slide(1,2)">2</div>
+        <div id="1-3" class="tile3" onclick="slide(1,3)">3</div>
+        <div id="1-4" class="tile4" onclick="slide(1,4)">4</div>
+
+        <div id="2-1" class="tile5" onclick="slide(2,1)">5</div>
+        <div id="2-2" class="tile6" onclick="slide(2,2)">6</div>
+        <div id="2-3" class="tile7" onclick="slide(2,3)">7</div>
+        <div id="2-4" class="tile8" onclick="slide(2,4)">8</div>
+
+        <div id="3-1" class="tile9" onclick="slide(3,1)">9</div>
+        <div id="3-2" class="tile10" onclick="slide(3,2)">10</div>
+        <div id="3-3" class="tile11" onclick="slide(3,3)">11</div>
+        <div id="3-4" class="tile12" onclick="slide(3,4)">12</div>
+
+        <div id="4-1" class="tile13" onclick="slide(4,1)">13</div>
+        <div id="4-2" class="tile14" onclick="slide(4,2)">14</div>
+        <div id="4-3" class="tile15" onclick="slide(4,3)">15</div>
+        <div id="4-4" class="tile16" onclick="slide(4,4)"></div>
+      </div>
+
+      <br>
+      Images<br>
+      <button name="back" onClick="changeBackground(1)">flower</button>
+      <button name="back" onClick="changeBackground(2)">pikachu</button>
+      <button name="back" onClick="changeBackground(3)">charizard</button>
+      <button name="back" onClick="changeBackground(4)">blastoise</button>
+      <button name="back" onClick="changeBackground(5)">venusaur</button>
+
+      <br>music:
+      <input type="radio" name="music" value="on" onclick="music()">On
+      <input type="radio" name="music" value="off" onclick="music()">Off
+
+      <br><span id="you"></span>
+      <button onClick="shuffle()" id="large">Shuffle</button>
+      <span id="win"></span>
+    </div>
+  </div>
+
+  <div class="validate">
+    <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fcodd.cs.gsu.edu%2F~tnguyen469%2Fpuzzle%2F">
+      <img src="http://www.w3.org/Icons/valid-xhtml10" alt="HTML Validator" /></a>
+
+      <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss"
+        alt="Valid CSS!" />
+      </a>
+    </div>
+
+  </body>
+  </html>

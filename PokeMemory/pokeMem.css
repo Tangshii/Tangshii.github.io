@@ -1,0 +1,99 @@
+body{
+  font-size: 20pt;
+  font-weight: bold;
+}
+#title{
+  font-size: 50pt;
+  font-family: "verdana";
+
+}
+#back{
+  background-image: url("back.png");
+  background-repeat: no-repeat;
+  margin: auto;
+  border: 2px solid;
+  height: 850px;
+  width: 1050px;
+}
+#container {
+  width: 1000px;
+
+  margin: auto;
+  text-align: left;
+}
+
+#v{
+  visibility: hidden;
+}
+
+#time, #countdown{
+  visibility: hidden;
+  font-size: 28pt;
+}
+
+#cen{
+  text-align: center;
+  margin: 0 auto;
+}
+img.match{
+  animation: match .7s;
+}
+
+table{
+  margin: auto;
+}
+
+td{
+  width: 150px;
+  height: 150px;
+  float: left;
+  margin: 5px;
+  border: 2px solid;
+  background-color: lightblue;
+}
+
+span{
+  text-align: left;
+  position: absolute;
+  font-size: 40pt;
+}
+
+button{
+  width: 90px;
+  height: 50px;
+  background-color: lightblue;
+  font-size: 17pt;
+  font-weight: bold;
+}
+
+img {
+  z-index: 2;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  animation: rubber .6s;
+}
+
+@keyframes rubber {
+  0% {transform: scale3d(1.2, 0.8, 1);}
+  25% {transform: scale3d(0.8, 1.2, 1);}
+  50% {transform: scale3d(1.1, 0.9, 1);}
+  75% {transform: scale3d(0.95, 1.05, 1);}
+  100% {transform: scale3d(1.05, 0.95, 1);}
+}
+
+@keyframes match {
+  10%,
+  20% {
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+  40%,
+  80%
+  {
+    transform: scale3d(1.15, 1.15, 1.15) rotate3d(0, 0, 1, 3deg);
+  }
+  60%,
+  100% {
+    transform: scale3d(1.15, 1.15, 1.15) rotate3d(0, 0, 1, -3deg);
+  }
+}

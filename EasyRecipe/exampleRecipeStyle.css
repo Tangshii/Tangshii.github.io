@@ -1,0 +1,113 @@
+body{
+	background-color: lightyellow;
+}
+
+.title1 {
+	font-size: 55pt;
+	text-align: center;
+	width: 750px;
+	height: 120px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+label {
+	font-size: 30pt;
+}
+
+img.crust{
+	position: absolute;
+	left: 35%;
+	top: 15%;
+	z-index: 1;
+}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+	background-color: lightblue;
+	width: 450px;
+	height: 40px;
+}
+/*start__________________________________*/
+
+
+
+
+
+/*Intial state*/
+.buildContent {
+	position: absolute;
+	left: 25%;
+	top: 30%;
+
+	width: 50%;
+	height: 0px;
+
+	visibility: hidden;
+	opacity: 0;
+}
+
+/*Clicked state*/
+.buildInput input:checked~.buildContent {
+	background: lightgrey;
+	margin-left: auto;
+	margin-right: auto;
+
+	width: 50%;
+	height: 700px;
+
+	visibility: visible;
+	opacity: 1;
+
+	transition: width 2s, height 2s;
+}
+
+.grow:hover {
+	background-color: lightblue;
+	height: 40px;
+
+	transform: scale(1.5);
+	transition: 0.5s ease;
+}
+
+
+/*Intial state*/
+.sauceBuild{
+	visibility: hidden;
+	opacity: 0;
+}
+
+/*Clicked state*/
+.sauceBuildInput input:checked~.sauceBuild {
+	width: 600px;
+	height: 600px;
+
+	visibility: visible;
+	opacity: 1;
+
+	position: absolute;
+	left: 35%;
+	top: 15%;
+	z-index: 2;
+
+	animation: rubber 2s;
+}
+
+
+img.animation:hover{
+	animation: rubber 1.6s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes rubber {
+	30% { transform: scale3d(1.25, 0.75, 1); }
+
+	40% { transform: scale3d(0.75, 1.25, 1); }
+
+	50% { transform: scale3d(1.15, 0.85, 1); }
+
+	65% { transform: scale3d(0.95, 1.05, 1); }
+
+	75% { transform: scale3d(1.05, 0.95, 1); }
+}

@@ -10123,6 +10123,7 @@ body {
  h2 {
   width: 20rem;
   font-size: 1.5rem;
+
 }
 
 .quote{
@@ -10261,7 +10262,7 @@ color: white;
   }
   h2 {
     max-width: 36rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   h3{
     font-size: 2rem;
@@ -10293,10 +10294,10 @@ h4{
   }
   h2 {
     max-width: 38rem;
-    font-size: 3.4rem;
+    font-size: 2.5rem;
   }
   h3{
-    font-size: 2.5rem;
+    font-size: 2.25rem;
   }
    .link{
   font-size: 2.5rem;
@@ -10322,7 +10323,7 @@ h4{
   }
   h2 {
     max-width: 42rem;
-    font-size: 3.7rem;
+    font-size: 2.75rem;
   }
   h3{
     font-size: 3rem;
@@ -10377,8 +10378,8 @@ h4{
   background-color: black;
 }
 .project-text{
-  padding: 1rem;
-  padding-top: .5rem;
+  padding: .5rem;
+  padding-top: 0rem;
   padding-bottom: : .5rem;
 }
 .projects-section .featured-text {
@@ -10387,8 +10388,8 @@ h4{
 
 @media (min-width: 992px) {
   .projects-section .project-text {
-    padding: 2rem;
-    padding-top: .8rem;
+    padding: 1rem;
+    padding-top: 0rem;
     padding-bottom: : .8rem;
   }
   .projects-section .project-text hr {
@@ -10594,9 +10595,7 @@ height: fit-content;
 }
 
 .vg{
-  margin-top: 5rem;animation: bounce .75s; 
-    animation-direction: alternate; 
-    animation-iteration-count: infinite; 
+  
 }
 .r{
   width: 100% !important;
@@ -10806,4 +10805,45 @@ h1.sk{
 .about-text{
   line-height: 1;
   color: white;
+}
+
+.resume{
+  padding-top: .75em;
+  padding-bottom: .75em;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 18pt;
+  text-transform: none;
+
+
+  animation: pulse 3s; 
+ 
+    animation-iteration-count: infinite; 
+
+
+}
+
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  14% {
+    transform: scale(1.03);
+  }
+  28% {
+    transform: scale(1);
+  }
+  42% {
+    transform: scale(1.03);
+  }
+  70% {
+    transform: scale(1);
+  }
+}
+
+
+.skill{
+  background-color: #e6e6e6;
 }

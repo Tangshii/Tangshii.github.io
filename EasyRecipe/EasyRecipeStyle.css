@@ -1,9 +1,14 @@
 body {
 	font-family: "Verdana";
-	background-image: url("PerfectPizza.jpg");
+	background-image: url("images/PerfectPizza.jpg");
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-attachment: fixed;
+}
+
+body::after{
+   position:absolute; width:0; height:0; overflow:hidden; z-index:-1; // hide images
+   content:url("images/PerfectPizza.jpg") ; // load images
 }
 
 .center {
@@ -477,6 +482,12 @@ label.buildBtn {
 	-moz-appearance: button;
 	-webkit-appearance: button;
 	background-color: lightblue;
+	border: 4px black solid;
+
+}
+
+label.buildBtn:hover {
+	transform: scale(1.2);
 }
 
 label{
@@ -494,15 +505,21 @@ label{
 .basilBuild {
 	width: 600px;
 	height: 600px;
+	display: none;
 	visibility: hidden;
 	opacity: 0;
 	transition: width 2s, height 2s;
 }
 
+
+
+
+
 .sauceBuildInput input:checked~.sauceBuild {
 	width: 600px;
 	height: 600px;
-	visibility: visible;
+	visibility: inherit;
+	display: block;
 	opacity: 1;
 	transition: width 2s, height 2s;
 	overflow: auto;
@@ -513,10 +530,13 @@ label{
 	animation: fade 2s;
 }
 
+
+
 .cheeseBuildInput input:checked~.cheeseBuild {
 	width: 600px;
 	height: 600px;
-	visibility: visible;
+	visibility: inherit;
+	display: block;
 	opacity: 1;
 	transition: width 2s, height 2s;
 	overflow: auto;
@@ -530,7 +550,8 @@ label{
 .pepperoniBuildInput input:checked~.pepperoniBuild {
 	width: 550px;
 	height: 550px;
-	visibility: visible;
+	visibility: inherit;
+	display: block;
 	opacity: 1;
 	overflow: auto;
 	position: absolute;
@@ -543,7 +564,8 @@ label{
 .hamBuildInput input:checked~.hamBuild {
 	width: 600px;
 	height: 600px;
-	visibility: visible;
+	visibility: inherit;
+	display: block;
 	opacity: 1;
 	transition: width 2s, height 2s;
 	overflow: auto;
@@ -557,7 +579,8 @@ label{
 .mushroomBuildInput input:checked~.mushroomBuild {
 	width: 600px;
 	height: 600px;
-	visibility: visible;
+	visibility: inherit;
+	display: block;
 	opacity: 1;
 	transition: width 2s, height 2s;
 	overflow: auto;
@@ -571,7 +594,8 @@ label{
 .onionBuildInput input:checked~.onionBuild {
 	width: 600px;
 	height: 600px;
-	visibility: visible;
+	visibility: inherit;
+	display: block;
 	opacity: 1;
 	transition: width 2s, height 2s;
 	overflow: auto;
@@ -585,7 +609,8 @@ label{
 .bellBuildInput input:checked~.bellBuild {
 	width: 600px;
 	height: 600px;
-	visibility: visible;
+	visibility: inherit;
+	display: block;
 	opacity: 1;
 	transition: width 2s, height 2s;
 	overflow: auto;
@@ -599,7 +624,8 @@ label{
 .oliveBuildInput input:checked~.oliveBuild {
 	width: 600px;
 	height: 600px;
-	visibility: visible;
+	visibility: inherit;
+	display: block;
 	opacity: 1;
 	transition: width 2s, height 2s;
 	overflow: auto;
@@ -613,7 +639,8 @@ label{
 .basilBuildInput input:checked~.basilBuild {
 	width: 600px;
 	height: 600px;
-	visibility: visible;
+	visibility: inherit;
+	display: block;
 	opacity: 1;
 	transition: width 2s, height 2s;
 	overflow: auto;

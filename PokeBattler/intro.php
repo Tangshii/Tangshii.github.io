@@ -6,9 +6,9 @@
 </head>
 <body>
   <div class="mid">
-    <img src="dsnew.png"  class="over">
+    <img src="res/dsnew.png"  class="over">
     <div class="center">
-      <img src="intro2.gif" >
+      <img src="res/intro2.gif" >
       <div class="bottom"><br>
 
         <a href=index.php >start</a>

@@ -6,9 +6,9 @@
 </head>
 <body>
   <div class="mid">
-  <img src="dsnew.png"  class="over">
+  <img src="res/dsnew.png"  class="over">
   <div class="center">
-    <img src="battle3.gif" class="battle">
+    <img src="res/battle3.gif" class="battle">
     <div class="background">
       <?php
       // Retrieve info from previous form
@@ -37,7 +37,7 @@
         $move1 = $char1;
         $move2 = $char2;
         $move3 = $char3;
-        echo"<img src=charizard2.gif class=pos1><br>";
+        echo"<img src=res/charizard2.gif class=pos1><br>";
       }
       // User Blastoise
       else if($choose=="blastoise"){
@@ -47,7 +47,7 @@
         $move1 = $blas1;
         $move2 = $blas2;
         $move3 = $blas3;
-        echo"<img src=blastoise2.gif class=pos1>";
+        echo"<img src=res/blastoise2.gif class=pos1>";
       }
       // User Venusaur
       else if($choose=="venusaur"){
@@ -57,7 +57,7 @@
         $move1 = $ven1;
         $move2 = $ven2;
         $move3 = $ven3;
-        echo"<img src=venusaur2.gif class=pos1>";
+        echo"<img src=res/venusaur2.gif class=pos1>";
       }
       echo"<br>";
 
@@ -80,7 +80,7 @@
         $aimove1 = $char1;
         $aimove2 = $char2;
         $aimove3 = $char3;
-        echo"<img src=charizard.gif class=pos2>";
+        echo"<img src=res/charizard.gif class=pos2>";
       }
       // Enemy Blastoise
       elseif($comp=="blastoise"){
@@ -90,7 +90,7 @@
         $aimove1 = $blas1;
         $aimove2 = $blas2;
         $aimove3 = $blas3;
-        echo"<img src=blastoise.gif class=pos2>";
+        echo"<img src=res/blastoise.gif class=pos2>";
       }
       // Enemy Venusauer
       elseif($comp=="venusaur"){
@@ -100,7 +100,7 @@
         $aimove1 = $ven1;
         $aimove2 = $ven2;
         $aimove3 = $ven3;
-        echo"<img src=venusaur.gif class=pos2>";
+        echo"<img src=res/venusaur.gif class=pos2>";
       }
 
       // Save all stats and moveset info to SESSION
@@ -128,12 +128,12 @@
 
       // Displays User character based on gender and enemy character
       if( $gender=="boy"){
-        echo"<img src=boy.gif class=trainer>";
+        echo"<img src=res/boy.gif class=trainer>";
       }
       elseif( $gender=="girl"){
-        echo"<img src=girl2.gif class=trainer>";
+        echo"<img src=res/girl2.gif class=trainer>";
       }
-      echo"<img src=gary.gif class=rival>";
+      echo"<img src=res/gary.gif class=rival>";
       ?>
     </div>
     <div class=bottom>

@@ -16,7 +16,7 @@ body{
   height: 765px;
   border: 1px solid rgba(220,214,211,1);
   margin: auto;
-  background: url("game.png");
+  background: url("res/game.png");
   background-color: white;
 }
 
@@ -44,10 +44,10 @@ body{
 
 .moveable:hover{
   float: left;
-  color: green;
-  border: 2px solid red;
+
+  border: 1px solid black;
   text-decoration: underline;
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 button{
@@ -85,129 +85,129 @@ span#win, span#you {
   float: left;
   width: 96px;
   height: 96px;
-  background: url("flower.jpg");
+  background: url("res/flower.jpg");
   background-position: 0 0;
-  border: 2px solid;
+  border: 1px solid;
 }
 .tile2{
   float: left;
   width: 96px;
   height: 96px;
-  background: url("flower.jpg");
+  background: url("res/flower.jpg");
   background-position: -100px 0px;
-  border: 2px solid;
+  border: 1px solid;
 }
 .tile3{
   float: left;
   width: 96px;
   height: 96px;
-  background: url("flower.jpg");
+  background: url("res/flower.jpg");
   background-position: -200px 0;
-  border: 2px solid;
+  border: 1px solid;
 }
 .tile4{
   float: left;
   width: 96px;
   height: 96px;
-  background: url("flower.jpg");
+  background: url("res/flower.jpg");
   background-position: -300px 0px;
-  border: 2px solid;
+  border: 1px solid;
 }
 .tile5{
   float: left;
   width: 96px;
   height: 96px;
-  background: url("flower.jpg");
+  background: url("res/flower.jpg");
   background-position: 0 -100px;
-  border: 2px solid;
+  border: 1px solid;
 }
 .tile6{
   float: left;
   width: 96px;
   height: 96px;
-  background: url("flower.jpg");
+  background: url("res/flower.jpg");
   background-position: -100px -100px;
-  border: 2px solid;
+  border: 1px solid;
 }
 .tile7{
   float: left;
   width: 96px;
   height: 96px;
-  background: url("flower.jpg");
+  background: url("res/flower.jpg");
   background-position:-200px -100px;
-  border: 2px solid;
+  border: 1px solid;
 }
 .tile8{
   float: left;
   width: 96px;
   height: 96px;
-  background: url("flower.jpg");
+  background: url("res/flower.jpg");
   background-position: -300px -100px;
-  border: 2px solid;
+  border: 1px solid;
 }
 .tile9{
   float: left;
   width: 96px;
   height: 96px;
-  background: url("flower.jpg");
+  background: url("res/flower.jpg");
   background-position: 0 -200px;
-  border: 2px solid;
+  border: 1px solid;
 }
 .tile10{
   float: left;
   width: 96px;
   height: 96px;
-  background: url("flower.jpg");
+  background: url("res/flower.jpg");
   background-position: -100px -200px;
-  border: 2px solid;
+  border: 1px solid;
 }
 .tile11{
   float: left;
   width: 96px;
   height: 96px;
-  background: url("flower.jpg");
+  background: url("res/flower.jpg");
   background-position: -200px -200px;
-  border: 2px solid;
+  border: 1px solid;
 }
 .tile12{
   float: left;
   width: 96px;
   height: 96px;
-  background: url("flower.jpg");
+  background: url("res/flower.jpg");
   background-position: -300px -200px;
-  border: 2px solid;
+  border: 1px solid;
 }
 .tile13{
   float: left;
   width: 96px;
   height: 96px;
-  background: url("flower.jpg");
+  background: url("res/flower.jpg");
   background-position:0 -300px;
-  border: 2px solid;
+  border: 1px solid;
 }
 .tile14{
   float: left;
   width: 96px;
   height: 96px;
-  background: url("flower.jpg");
+  background: url("res/flower.jpg");
   background-position: -100px -300px;
-  border: 2px solid;
+  border: 1px solid;
 }
 .tile15{
   float: left;
   width: 96px;
   height: 96px;
-  background: url("flower.jpg");
+  background: url("res/flower.jpg");
   background-position: -200px -300px;
-  border: 2px solid;
+  border: 1px solid;
 }
 .tile16{
   float: left;
   width: 96px;
   height: 96px;
-  background: url("flower.jpg");
+  background: url("res/flower.jpg");
   background-position: -300px -300px;
-  border: 2px solid;
+  border: 1px solid;
 }
 
 @keyframes pop {

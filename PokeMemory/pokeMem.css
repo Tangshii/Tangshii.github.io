@@ -8,7 +8,7 @@ body{
 
 }
 #back{
-  background-image: url("back.png");
+  background-image: url("res/back.png");
   background-repeat: no-repeat;
   margin: auto;
   border: 2px solid;

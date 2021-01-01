@@ -6,7 +6,7 @@
 </head>
 <body>
   <div class="mid">
-  <img src="dsnew.png"  class="over">
+  <img src="res/dsnew.png"  class="over">
   <div class="center">
     <div class="background">
       <?php
@@ -14,8 +14,8 @@
       session_start();
       $poke = $_SESSION['poke'];
       $aiPoke = $_SESSION['aiPoke'];
-      $pokeP = $poke."2.gif";
-      $aiPokeP = $aiPoke.".gif";
+      $pokeP = "res/".$poke."2.gif";
+      $aiPokeP = "res/".$aiPoke.".gif";
 
       $att= $_SESSION['att'];
       $def=$_SESSION['def'];
@@ -37,12 +37,12 @@
 
       // Displays User character based on gender and enemy character
       if( $gender=="boy"){
-        echo"<img src=boy.gif class=trainer>";
+        echo"<img src=res/boy.gif class=trainer>";
       }
       elseif( $gender=="girl"){
-        echo"<img src=girl2.gif class=trainer>";
+        echo"<img src=res/girl2.gif class=trainer>";
       }
-      echo"<img src=gary.gif class=rival>";
+      echo"<img src=res/gary.gif class=rival>";
 
       // Randomly picks enemey move
       $com = rand(1,3);

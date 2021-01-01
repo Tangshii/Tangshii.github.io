@@ -10847,3 +10847,15 @@ h1.sk{
 .skill{
   background-color: #e6e6e6;
 }
+
+
+@media (min-width: 576px) {
+  .skill-pad{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+}
+
+
+

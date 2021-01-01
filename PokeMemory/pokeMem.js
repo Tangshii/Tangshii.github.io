@@ -24,9 +24,9 @@ function setArr(slice,time){
   //remove Difficulty selectors
   document.getElementById("d").remove();
   //initalizes array
-  var images = ["1.png","2.png","3.png","4.png",
-  "5.png","6.png","7.png","8.png",
-  "9.png","10.png","11.png","12.png",];
+  var images = ["res/1.png","res/2.png","res/3.png","res/4.png",
+  "res/5.png","res/6.png","res/7.png","res/8.png",
+  "res/9.png","res/10.png","res/11.png","res/12.png",];
   //Randomly pick images, base on Difficulty size
   randomize(images);
   images = images.slice(0,slice);
@@ -61,7 +61,7 @@ function go(images, slice,time){
       document.getElementById("time").textContent = "you lost...";
       document.getElementById("v").style.visibility = "visible";
       //play lose music
-      playM(new Audio("lose.mp3"), goSound);
+      playM(new Audio("res/lose.mp3"), goSound);
       pauseAudio();
       // can't play
       go = false;
@@ -132,12 +132,12 @@ function go(images, slice,time){
             document.getElementById("v").style.visibility = "visible";
             // play win music after delay, and stop main music
             setTimeout(function() {
-              playM(new Audio("win.mp3"), goSound);
+              playM(new Audio("res/win.mp3"), goSound);
               pauseAudio();
             }, 500);
           }
           //plays match sound effect, ding
-          playM(new Audio("yes.wav"),  goSound);
+          playM(new Audio("res/yes.wav"),  goSound);
         }
 
         // else it's a miss
@@ -147,7 +147,7 @@ function go(images, slice,time){
             $("img").not(".match").removeClass("face-up");
             count = 0;
           }, 900);
-          playM(new Audio("no.wav"),  goSound);
+          playM(new Audio("res/no.wav"),  goSound);
         }
       }
     }
@@ -160,56 +160,56 @@ function pokeSound(sound, goSound){
     var audio;
 
     switch(sound){
-      case "1.png":
-      audio = new Audio("charizard.mp3");
+      case "res/1.png":
+      audio = new Audio("res/charizard.mp3");
       break;
 
-      case "2.png":
-      audio = new Audio("venusaur.mp3");
+      case "res/2.png":
+      audio = new Audio("res/venusaur.mp3");
       break;
 
-      case "3.png":
-      audio = new Audio("blastoise.mp3");
+      case "res/3.png":
+      audio = new Audio("res/blastoise.mp3");
       break;
 
-      case "4.png":
-      audio = new Audio("meganium.mp3");
+      case "res/4.png":
+      audio = new Audio("res/meganium.mp3");
       break;
 
-      case "5.png":
-      audio = new Audio("typhlosion.mp3");
+      case "res/5.png":
+      audio = new Audio("res/typhlosion.mp3");
       break;
 
-      case "6.png":
-      audio = new Audio("feraligatr.mp3");
+      case "res/6.png":
+      audio = new Audio("res/feraligatr.mp3");
       break;
 
-      case "7.png":
-      audio = new Audio("sceptile.mp3");
+      case "res/7.png":
+      audio = new Audio("res/sceptile.mp3");
       break;
 
-      case "8.png":
-      audio = new Audio("blaziken.mp3");
+      case "res/8.png":
+      audio = new Audio("res/blaziken.mp3");
       break;
 
-      case "9.png":
-      audio = new Audio("swampert.mp3");
+      case "res/9.png":
+      audio = new Audio("res/swampert.mp3");
       break;
 
-      case "10.png":
-      audio = new Audio("torterra.mp3");
+      case "res/10.png":
+      audio = new Audio("res/torterra.mp3");
       break;
 
-      case "11.png":
-      audio = new Audio("infernape.mp3");
+      case "res/11.png":
+      audio = new Audio("res/infernape.mp3");
       break;
 
-      case "12.png":
-      audio = new Audio("empoleon.mp3");
+      case "res/12.png":
+      audio = new Audio("res/empoleon.mp3");
       break;
       default:
     }
-    audio.volume = .35;
+    audio.volume = .12;
     audio.play(sound);
   }
 }
@@ -217,7 +217,7 @@ function pokeSound(sound, goSound){
 // Plays and stops main audio
 var goSound= false;
 var mus = document.getElementById("myAudio");
-mus.volume = 0.25;
+mus.volume = 0.10;
 function playAudio() {
   mus.play();
   goSound= true;
@@ -245,6 +245,7 @@ function randomize(array){
 };
 
 function playM(mus, go){
+  mus.volume=0.2
   if(go)
   mus.play();
 }

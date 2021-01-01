@@ -115,7 +115,9 @@ function checkSlide(curTile, position , w){
     if(win){
       // pause audio and play win sound
       audio.pause();
-      new Audio("win.mp3").play();
+      var sound = new Audio("res/win.mp3");
+      sound.volume = 0.05;
+      sound.play();
 
       // change background color and display win message
       document.getElementById("inside").style.backgroundColor= "#d4af37";
@@ -159,7 +161,7 @@ function checkSlide(curTile, position , w){
       var a = document.getElementsByClassName("tile"+i)[0];
       //found empty tile, saves postion
       if(a.innerHTML == ""){
-        a.style.backgroundImage = "url('empty.png')";
+        a.style.backgroundImage = "url('res/empty.png')";
         var row = parseInt(a.id[0]);
         var col = parseInt(a.id[2]);
       }
@@ -195,21 +197,23 @@ function checkSlide(curTile, position , w){
   // For backgroundImage
   function changeBackground(val){
     switch(val) {
-      case 1:background = "flower.jpg";break;
-      case 2:background = "pika.png";break;
-      case 3:background = "cha.png";break;
-      case 4:background = "blast.png";break;
-      case 5:background = "venu.png";break;
+      case 1:background = "res/flower.jpg";break;
+      case 2:background = "res/pika.png";break;
+      case 3:background = "res/cha.png";break;
+      case 4:background = "res/blast.png";break;
+      case 5:background = "res/venu.png";break;
       default:
     }
     //set empty tile and all Images
     set();
   }
 
-  var audio =  new Audio("music.mp3");
+  var audio =  new Audio("res/music.mp3");
+  audio.volume = 0.06
   // For music
   function music() {
     var play = document.getElementsByName('music');
+
     if(play[0].checked)
     audio.play();
     else if(play[1].checked)

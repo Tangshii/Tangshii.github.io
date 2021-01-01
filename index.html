@@ -16,6 +16,29 @@
       <link rel="stylesheet" href="css/font-mfizz.css">
       <!-- Core theme CSS (includes Bootstrap)-->
       <link href="css/styles.css" rel="stylesheet" />
+
+	  <script src= 
+    "https://smtpjs.com/v3/smtp.js"> 
+  </script> 
+  
+  <script type="text/javascript"> 
+    function sendEmail() { 
+      Email.send({ 
+        Host: "smtp.elasticemail.com", 
+        Username: "99thangnguyen@gmail.com", 
+        Password: "B72FD8AC3BF53B1B1EEF0AEC750337EA3C65",
+        Port: "2525", 
+        To: '99thangnguyen@gmail.com', 
+        From: "sender@email_address.com", 
+        Subject: "Sending Email using javascript", 
+        Body: "Well that was easy!!", 
+      }) 
+        .then(function (message) { 
+          alert("mail sent successfully") 
+        }); 
+    } 
+  </script> 
+
    </head>
    <body id="page-top">
       <!-- Navigation-->
@@ -541,28 +564,62 @@ Nice to meet you and hope to work with you!   </h4>
          <br>
         
          <!-- Contact-->
-         <div class="container">
-            <div class="row">
-               <div class="col-md-6 ">
-                  <div class="card py-4 h-100">
-                     <div class="card-body text-center">
-                        <i class="fas fa-envelope text-primary "></i>
-                        <h4 class="text-uppercase m-0">Email</h4>
-                        <div class=" text-black">99ThangNguyen@gmail.com</div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-6 ">
-                  <div class="card py-4 h-100">
-                     <div class="card-body text-center">
-                        <i class="fas fa-mobile-alt text-primary "></i>
-                        <h4 class="text-uppercase m-0">Phone</h4>
-                        <div class=" text-black">+1 (404) 259-2784</div>
-                     </div>
-                  </div>
-               </div>
+      
+ 
+
+  		<form method="post">
+	         <div class="container">
+	            <div class="row">
+	               <div class="col-md-6 ">
+	                  <div class="card py-4 h-100">
+	                     <div class="card-body text-center">
+	                        <i class="fas fa-envelope text-primary "></i>
+	                        <h4 class="text-uppercase m-0">Email</h4>
+	                        <p class="mb-0 ">Java GUI game <br> try to match the arrows!</p>
+	                     </div>
+	                  </div>
+	               </div>
+	               <div class="col-md-6 ">
+	                  <div class="card py-4 h-100">
+	                     <div class="card-body text-center">
+	                        <i class="fas fa-mobile-alt text-primary "></i>
+	                        <h4 class="text-uppercase m-0">Phone</h4>
+	                        <div class=" text-black">+1 (404) 259-2784</div>
+	                     </div>
+	                  </div>
+	               </div>
+	            </div>
+	         </div>
+
+	            <input type="button" value="Send Email" 
+        onclick="sendEmail()" /> 
+	    </form> 
+
+
+
+
+
+
+
+<form target="_blank" action="https://formsubmit.co/99thangnguyen@gmail.com" method="POST">
+	<input type="hidden" name="_next" value="https://tangshii.github.io/">
+        <div class="form-group">
+            <div class="form-row">
+                <div class="col">
+                    <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                </div>
+                <div class="col">
+                    <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                </div>
             </div>
-         </div>
+        </div>
+        <div class="form-group">
+            <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+    </form>
+
+
       </section>
       <!-- Footer-->
       <footer class="footer bg-black small text-center text-white-50">
